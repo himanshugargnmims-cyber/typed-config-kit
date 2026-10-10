@@ -1,0 +1,14 @@
+{
+  "name": "typed-config-kit",
+  "version": "1.0.0",
+  "description": "Tiny typed environment configuration parser with useful errors",
+  "type": "module",
+  "files": ["dist", "README.md", "LICENSE"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "scripts": { "build": "tsc -p tsconfig.json", "test": "npm run build && node --test test/*.test.mjs" },
+  "devDependencies": { "typescript": "^5.9.3" },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
